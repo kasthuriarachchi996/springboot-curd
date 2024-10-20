@@ -1,1 +1,17 @@
-spring.application.name=sprigCrud
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student-crud
+    username: postgres
+    password: P@980870464v
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
